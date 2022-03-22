@@ -1,13 +1,9 @@
 ## Data Warehousing with AWS Redshift
 
 
-#### Introduction
+#### Project Description
 A music streaming startup, Sparkify, has grown their user base and song database and want to move their processes and data onto the cloud.
 The data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
-The goal is to build an ETL pipeline and load the data into redshift for analysis.
-
-
-#### Project Description
 In this project, I have built an ETL pipeline that extracts the data from S3, stages them in Redshift, and transforms data into a set of dimensional tables.
 The analytics team can then access the processed data to find insights into what songs their users are listening
 

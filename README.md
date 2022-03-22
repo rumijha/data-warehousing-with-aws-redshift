@@ -33,7 +33,7 @@ The log files are partitioned by year and month. For example, here are filepaths
 log_data/2018/11/2018-11-12-events.json\
 log_data/2018/11/2018-11-13-events.json
 song_data holds the details of the song and its artists\
-log_data hold the details of users which tell what songs is being heard and others\
+log_data hold the details of users which tell what songs is being heard and others
 
 And below is an example of what the data in a log file, 2018-11-12-events.json, looks like.
 ![alt text](https://github.com/rumijha/data-modeling-with-postgres/blob/main/log-data.png)
@@ -49,7 +49,7 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 * *num_songs, artist_id, artist_latitude, artist_longitude, artist_location, artist_name, song_id, title, duration, year*
 
 #### Fact Table
-**songplays** - records in log data associated with song plays i.e. records with page NextSong\
+**songplays** - records in log data associated with song plays i.e. records with page NextSong
 * *songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent*
 
 #### Dimension Tables
@@ -67,7 +67,7 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 
 
 #### Project Files
-In addition to the data files, the project includes five files:
+In addition to the data files, the project includes four files:
 * *create_tables.py* drops and creates the tables. This file can be run to reset the tables each time before the ETL scripts are run.
 * *etl.py* load data from S3 to staging tables on Redshift and load data from staging tables to dimensions tables on Redshift.
 * *sql_queries.py* contains all the sql queries, and is imported into the two files above.

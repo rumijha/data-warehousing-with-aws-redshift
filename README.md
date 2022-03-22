@@ -4,7 +4,7 @@
 #### Project Description
 A music streaming startup, Sparkify, has grown their user base and song database and want to move their processes and data onto the cloud.
 The data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
-In this project, I have built an ETL pipeline that extracts the data from S3, stages them in Redshift, and transforms data into a set of dimensional tables.
+In this project, I have built an ETL pipeline that extracts the data from S3, stages them in **AWS Redshift**, and transforms the data into a set of dimensional tables.
 The analytics team can then access the processed data to find insights into what songs their users are listening
 
 
@@ -71,4 +71,4 @@ In addition to the data files, the project includes four files:
 
 
 #### How To Run the Project
-Run etl.py to process all the files under S3 and load the data into Redshift staging tables. Accessing staging tables to load data into respective dimension tables in redshift.
+Run etl.py to read all the files under S3, load the data into Redshift staging tables, and process staging tables to load the data into respective fact and dimension tables in AWS Redshift.
